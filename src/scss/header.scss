@@ -1,0 +1,49 @@
+.header {
+  &__leftblock {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    & .service__stick {
+      display: none;
+    }
+  }
+  &__additional-button {
+    display: none;
+  }
+  &__rightblock {
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff3e79;
+  }
+  &__two-right-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-family: "TTLakes-Regular";
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    &__additional-button {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.application {
+  &__text {
+    font-family: "TTLakes-Regular";
+    font-size: 14px;
+    line-height: 20px;
+    margin: 28px 16px 16px 16px;
+    width: 420px;
+  }
+  &__button {
+    margin: 16px 16px 0px 16px;
+    background-color: inherit;
+    font-family: "TTLakes-Regular";
+    font-weight: bold;
+    border: none;
+    width: 192px;
+    height: 54px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    & img {
+      margin: -2px -2px -2px 5px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .application {
+    &__text {
+      margin: 24px 0px 16px 24px;
+    }
+    &__button {
+      margin: 16px 0px 0px 24px;
+      width: 100%;
+    }
+  }
+}

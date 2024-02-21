@@ -1,0 +1,49 @@
+.service__footer {
+  font-family: "TTLakes-Regular";
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(126, 126, 130, 1);
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  margin: 40px 0px 0px 0px;
+}
+@media (min-width: 769px) {
+  .service__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 32px 0px 21px 24px;
+    & .footer__team {
+      width: 218px;
+
+      display: flex;
+      text-align: left;
+    }
+    & .footer__politics {
+      width: 214px;
+    }
+    & .footer__info-private {
+      width: 214px;
+      display: flex;
+      text-align: right;
+    }
+  }
+}
+@include desktop {
+  .service__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 32px 0px 21px 31px;
+  }
+  .service__footer {
+    & .footer__info-private {
+      width: 330px;
+      display: flex;
+      text-align: right;
+    }
+  }
+}

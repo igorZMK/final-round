@@ -1,0 +1,76 @@
+.text {
+  &__readmore {
+    display: flex;
+    background-color: inherit;
+    font-family: "TTLakes-Regular";
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    padding: 16px 0px 16px 8px;
+    gap: 16px;
+    align-items: center;
+  }
+  &__readmore img {
+    width: 8px;
+    height: 11px;
+  }
+  &__additionaltext {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    &__description {
+      width: 312px;
+      height: 160px;
+      display: flex;
+      justify-content: space-between;
+
+      height: 16 0px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    &__additionaltext {
+      display: flex;
+      width: 312px;
+      height: 34px;
+      overflow: hidden;
+    }
+    &__readmore {
+      padding: 10px 0px 14px 8px;
+    }
+    &__text {
+      width: 312px;
+      letter-spacing: 0.2px;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0px;
+    }
+  }
+  @include desktop {
+    &__description {
+      width: 490px;
+      height: 160px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 11px 36px 13px 0px;
+    }
+
+    &__additionaltext {
+      display: flex;
+      width: 490px;
+      height: 70px;
+      overflow: visible;
+    }
+    &__text {
+      display: block;
+    }
+    &__readmore {
+      padding: 0px 0px 0px 8px;
+      gap: 16px;
+    }
+  }
+}

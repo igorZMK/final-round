@@ -1,0 +1,24 @@
+.bottom-text {
+  @media (min-width: 768px) {
+    &__title {
+      padding: 24px 0px 32px 24px;
+    }
+    &__stick {
+      display: flex;
+    }
+    &__additional-button {
+      gap: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__header {
+      padding: 19px 24px 19px 24px;
+    }
+  }
+  @include desktop {
+    &__title {
+      padding: 42px 25px 8px 32px;
+    }
+  }
+}

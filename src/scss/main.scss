@@ -1,0 +1,42 @@
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "vars";
+@import "settings";
+@import "service";
+@import "brand-menu";
+@import "header";
+@import "button-container";
+@import "services-menu";
+@import "text";
+@import "bottom-text";
+@import "cost-menu";
+@import "application";
+@import "footer";
+@import "mobile-menu";
+@import "modal-feedback";
+@import "modal-call";
+
+@media (min-width: 1440px) {
+  .service {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+  }
+}
+
+.body_hidden {
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  & img {
+    width: 30%;
+  }
+}
+
+.welcome-title {
+  margin-top: 50px;
+  font-size: 6em;
+}
